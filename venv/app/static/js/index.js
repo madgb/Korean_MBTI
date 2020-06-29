@@ -5,26 +5,30 @@ const btnArr = [...btn];
 btnArr.forEach((eachBtn) => {
     eachBtn.addEventListener("click", (event) => {
         const name = event.target.name;
-        const testType = event.target.parentElement.parentElement.classList[0];
-        if (testType === "jjjb") {
-            result[0].push(name);
-        }
-        if (testType === "jmbm") {
-            result[1].push(name);
-        }
-        if (testType === "mnbn") {
-            result[2].push(name);
-        }
-        if (testType === "mdsd") {
-            result[3].push(name);
-        }
-
-        if (count > 10) {
-            selectAge(result);
+        if(name !== 'start'){
+            const testType = event.target.parentElement.parentElement.parentElement.classList[0];
+            if (testType === "jjjb") {
+                result[0].push(name);
+            }
+            if (testType === "jmbm") {
+                result[1].push(name);
+            }
+            if (testType === "mnbn") {
+                result[2].push(name);
+            }
+            if (testType === "mdsd") {
+                result[3].push(name);
+            }
+    
+            if (count > 10) {
+                selectAge(result);
+            } else {
+                showHide(count);
+            }
+            count++;
         } else {
-            showHide(count);
+            startTest();
         }
-        count++;
     });
 });
 
@@ -57,15 +61,14 @@ const showHide = function(count) {
     qAA[count+1].classList.add('show');
 }
 
-const startButton = document.querySelector('.test-start-button');
-startButton.addEventListener("click", () => {
+const startTest = function() {
     const introPart = document.querySelector('.intro');
     introPart.classList.add('hide');
     const testPart = document.querySelector(".test");
     testPart.classList.remove('hide');
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-});
+}
 
 const translateForm = {
     "짜": "A",

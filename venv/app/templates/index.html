@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>한국식 MBTI | 짜부물밀부터 짬찍비쌀까지</title>
         <meta name="title" content="한국식 MBTI | 짜부물밀부터 짬찍비쌀까지" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}" />
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+        <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="wrapper">
@@ -13,108 +15,243 @@
                 <div class="intro">
                     <div class="intro-inner">
                         <div class="title">
-                            <h1>
-                                한국식 MBTI(먹방타입)
+                            <h1 class="title-font text-center">
+                                한국식 근본 MBTI
                             </h1>
-                            <h4>짜부물밀부터 짬찍비쌀까지</h4>
+                            <h4 class="font-weight-100 title-font text-center">짜부물밀부터 짬찍비쌀까지</h4>
                         </div>
-                        <div class="pics">
+                        <div class="flex-box pics">
                             <div class="pic-box jjajang"></div>
                             <div class="pic-box jjambong"></div>
                             <div class="pic-box boomuk"></div>
                             <div class="pic-box jjikmuk"></div>
                             <div class="pic-box mool"></div>
                             <div class="pic-box bibim"></div>
-                            <div class="pic-box mildd"></div>
+                            <div class="pic-box mildd2"></div>
                             <div class="pic-box ssaldd"></div>
                         </div>
-                        <div class="test-start">
-                            <button class="test-start-button">테스트 시작</button>
+                        <div class="test-start text-center">
+                            <button class="btn btn-main test-start-button" name="start">테스트 시작</button>
+                        </div>
+                        <div class="copyright text-center">
+                            <p>사진과 관련하여 저작권 문제나 기타 의견이 있으신 경우</p>
+                            <p>notveryusefultest@gmail.com 으로 알려주시기 바랍니다</p>
                         </div>
                     </div>
                 </div>
                 <div class="test hide">
                     <div class="jjjb">
                         <div class="q1 question">
-                            <div class="title">배달시</div>
-                            <button type="button" name="짜">짜장</button>
-                            <button type="button" name="짬">짬뽕</button>
+                            <h2 class="title-font text-center question-title">
+                                짜장 대 짬뽕
+                            </h2>
+                            <div class="flex-box test-pic-box">
+                                <div class="pic-box jjajang"></div>
+                                <div class="pic-box jjambong"></div>
+                            </div>
+                            <div class="title question-content">큰 맘 먹고 괜찮은 중국집에 방문했다. 당신의 선택은?</div>
+                            <div class="btn-wrapper answer-btn-wrapper flex-box">
+                                <button class="btn answer-btn" type="button" name="짜">짜장</button>
+                                <button class="btn answer-btn" type="button" name="짬">짬뽕</button>
+                            </div>
                         </div>
                         <div class="q2 question hide">
-                            <div class="title">식당시</div>
-                            <button type="button" name="짜">짜장</button>
-                            <button type="button" name="짬">짬뽕</button>
+                            <h2 class="title-font text-center question-title">
+                                짜장 대 짬뽕
+                            </h2>
+                            <div class="flex-box test-pic-box">
+                                <div class="pic-box jjajang2"></div>
+                                <div class="pic-box jjambong2"></div>
+                            </div>
+                            <div class="title question-content">학교/회사 등에서 점심을 간단히 배달 시켜 먹기로 했다. 당신의 선택은?</div>
+                            <div class="btn-wrapper answer-btn-wrapper flex-box">
+                                <button class="btn answer-btn" type="button" name="짜">짜장</button>
+                                <button class="btn answer-btn" type="button" name="짬">짬뽕</button>
+                            </div>
                         </div>
                         <div class="q3 question hide">
-                            <div class="title">여러명</div>
-                            <button type="button" name="짜">짜장</button>
-                            <button type="button" name="짬">짬뽕</button>
+                            <h2 class="title-font text-center question-title">
+                                짜장 대 짬뽕
+                            </h2>
+                            <div class="flex-box test-pic-box">
+                                <div class="pic-box jjajang3"></div>
+                                <div class="pic-box jjambong3"></div>
+                            </div>
+                            <div class="title question-content">비싼 옵션을 선택할 수 있는 기회다. 
+                                <p><b>간짜장, 삼선짜장, 쟁반짜장, 유니짜장 등</b></p>
+                                <p><b>굴짬뽕, 삼선짬뽕, 쟁반짬뽕, 고기짬뽕 등</b></p>
+                                당신의 선택은?
+                            </div>
+                            <div class="btn-wrapper answer-btn-wrapper flex-box">
+                                <button class="btn answer-btn" type="button" name="짜">짜장</button>
+                                <button class="btn answer-btn" type="button" name="짬">짬뽕</button>
+                            </div>
                         </div>
                     </div>
                     <div class="jmbm">
                         <div class="q1 question hide">
-                            <div class="title">배달시</div>
-                            <button type="button" name="부">부먹</button>
-                            <button type="button" name="찍">찍먹</button>
+                            <h2 class="title-font text-center question-title">
+                                부먹 대 찍먹
+                            </h2>
+                            <div class="flex-box test-pic-box">
+                                <div class="pic-box boomuk"></div>
+                                <div class="pic-box jjikmuk"></div>
+                            </div>
+                            <div class="title question-content">
+                                <p>이름난 탕수육 맛집을 알아내서 찾아왔다.</p>
+                                <p>소스에 볶아 나오지 않고 따로 나왔는데, 당신의 선택은?</p>
+                            </div>
+                            <div class="btn-wrapper answer-btn-wrapper flex-box">
+                                <button class="btn answer-btn" type="button" name="부">부먹</button>
+                                <button class="btn answer-btn" type="button" name="찍">찍먹</button>
+                            </div>
                         </div>
                         <div class="q2 question hide">
-                            <div class="title">식당시</div>
-                            <button type="button" name="부">부먹</button>
-                            <button type="button" name="찍">찍먹</button>
+                            <h2 class="title-font text-center question-title">
+                                부먹 대 찍먹
+                            </h2>
+                            <div class="flex-box test-pic-box">
+                                <div class="pic-box boomuk2"></div>
+                                <div class="pic-box jjikmuk2"></div>
+                            </div>
+                            <div class="title question-content">
+                                친구집에서 야식으로 동네 중국집에서 탕수육과 볶음밥을 시켰다. 당신의 선택은?
+                            </div>
+                            <div class="btn-wrapper answer-btn-wrapper flex-box">
+                                <button class="btn answer-btn" type="button" name="부">부먹</button>
+                                <button class="btn answer-btn" type="button" name="찍">찍먹</button>
+                            </div>
                         </div>
                         <div class="q3 question hide">
-                            <div class="title">여러명</div>
-                            <button type="button" name="부">부먹</button>
-                            <button type="button" name="찍">찍먹</button>
+                            <h2 class="title-font text-center question-title">
+                                부먹 대 찍먹
+                            </h2>
+                            <div class="flex-box test-pic-box">
+                                <div class="pic-box boomuk3"></div>
+                                <div class="pic-box jjikmuk3"></div>
+                            </div>
+                            <div class="title question-content">
+                                <p>학교/회사 등에서 점심을 간단히 배달 시켜 먹기로 했다.</p>
+                                <p>부먹/찍먹 결정권은 내게 있다.</p>
+                                <p>모두가 나를 쳐다보고 있는데.. 당신의 선택은?</p>
+                            </div>
+                            <div class="btn-wrapper answer-btn-wrapper flex-box">
+                                <button class="btn answer-btn" type="button" name="부">부먹</button>
+                                <button class="btn answer-btn" type="button" name="찍">찍먹</button>
+                            </div>
                         </div>
                     </div>
                     <div class="mnbn">
                         <div class="q1 question hide">
-                            <div class="title">배달시</div>
-                            <button type="button" name="물">물냉</button>
-                            <button type="button" name="비">비냉</button>
+                            <h2 class="title-font text-center question-title">
+                                물냉 대 비냉
+                            </h2>
+                            <div class="flex-box test-pic-box">
+                                <div class="pic-box mool"></div>
+                                <div class="pic-box bibim"></div>
+                            </div>
+                            <div class="title question-content">
+                                <p>냉면 맛집을 찾아가 만두/편육을 곁들여 먹기로 했다.</p>
+                                <p>당신이 선택한 냉면은?</p>
+                            </div>
+                            <div class="btn-wrapper answer-btn-wrapper flex-box">
+                                <button class="btn answer-btn" type="button" name="물">물냉</button>
+                                <button class="btn answer-btn" type="button" name="비">비냉</button>
+                            </div>
                         </div>
                         <div class="q2 question hide">
-                            <div class="title">식당시</div>
-                            <button type="button" name="물">물냉</button>
-                            <button type="button" name="비">비냉</button>
+                            <h2 class="title-font text-center question-title">
+                                물냉 대 비냉
+                            </h2>
+                            <div class="flex-box test-pic-box">
+                                <div class="pic-box mool2"></div>
+                                <div class="pic-box bibim2"></div>
+                            </div>
+                            <div class="title question-content">
+                                <p>회사/학교에서 간단히 점심을 근처 분식집에서 먹기로 했다.</p>
+                                <p>당신의 선택은?</p>
+                            </div>
+                            <div class="btn-wrapper answer-btn-wrapper flex-box">
+                                <button class="btn answer-btn" type="button" name="물">물냉</button>
+                                <button class="btn answer-btn" type="button" name="비">비냉</button>
+                            </div>
                         </div>
                         <div class="q3 question hide">
-                            <div class="title">여러명</div>
-                            <button type="button" name="물">물냉</button>
-                            <button type="button" name="비">비냉</button>
+                            <h2 class="title-font text-center question-title">
+                                물냉 대 비냉
+                            </h2>
+                            <div class="flex-box test-pic-box">
+                                <div class="pic-box mool3"></div>
+                                <div class="pic-box bibim3"></div>
+                            </div>
+                            <div class="title question-content">
+                                <p>고깃집에서 고기를 구워 먹으며,</p>
+                                <p>혹은 후식으로 주문하고 싶은 냉면은?</p>
+                            </div>
+                            <div class="btn-wrapper answer-btn-wrapper flex-box">
+                                <button class="btn answer-btn" type="button" name="물">물냉</button>
+                                <button class="btn answer-btn" type="button" name="비">비냉</button>
+                            </div>
                         </div>
                     </div>
                     <div class="mdsd">
                         <div class="q1 question hide">
-                            <div class="title">배달시</div>
-                            <button type="button" name="밀">밀떡</button>
-                            <button type="button" name="쌀">쌀떡</button>
+                            <h2 class="title-font text-center question-title">
+                                밀떡 대 쌀떡
+                            </h2>
+                            <div class="flex-box test-pic-box">
+                                <div class="pic-box mildd"></div>
+                                <div class="pic-box ssaldd"></div>
+                            </div>
+                            <div class="title question-content">당신의 최애 떡볶이집에서 쓰는 떡 종류는?</div>
+                            <div class="btn-wrapper answer-btn-wrapper flex-box">
+                                <button class="btn answer-btn" type="button" name="밀">밀떡</button>
+                                <button class="btn answer-btn" type="button" name="쌀">쌀떡</button>
+                            </div>
                         </div>
                         <div class="q2 question hide">
-                            <div class="title">식당시</div>
-                            <button type="button" name="밀">밀떡</button>
-                            <button type="button" name="쌀">쌀떡</button>
+                            <h2 class="title-font text-center question-title">
+                                밀떡 대 쌀떡
+                            </h2>
+                            <div class="flex-box test-pic-box">
+                                <div class="pic-box mildd2"></div>
+                                <div class="pic-box ssaldd2"></div>
+                            </div>
+                            <div class="title question-content">길거리/포장마차 떡볶이에서 선호하는 떡은?</div>
+                            <div class="btn-wrapper answer-btn-wrapper flex-box">
+                                <button class="btn answer-btn" type="button" name="밀">밀떡</button>
+                                <button class="btn answer-btn" type="button" name="쌀">쌀떡</button>
+                            </div>
                         </div>
                         <div class="q3 question hide">
-                            <div class="title">여러명</div>
-                            <button type="button" name="밀">밀떡</button>
-                            <button type="button" name="쌀">쌀떡</button>
+                            <h2 class="title-font text-center question-title">
+                                밀떡 대 쌀떡
+                            </h2>
+                            <div class="flex-box test-pic-box">
+                                <div class="pic-box mildd3"></div>
+                                <div class="pic-box ssaldd3"></div>
+                            </div>
+                            <div class="title question-content">즉석떡볶이에 넣고 싶은 떡의 종류는?</div>
+                            <div class="btn-wrapper answer-btn-wrapper flex-box">
+                                <button class="btn answer-btn" type="button" name="밀">밀떡</button>
+                                <button class="btn answer-btn" type="button" name="쌀">쌀떡</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="age hide">
+                <div class="age text-center hide">
+                    <div class="age-title">연령대를 선택해주세요</div>
                     <select class="age-select">
-                        <option value="선택해주세요" selected>선택해주세요</option>
+                        <option value="선택하기" selected>선택하기</option>
                         <option value="teen">10대</option>
                         <option value="twenty">20대</option>
                         <option value="thirty">30대</option>
                         <option value="fourty">40대 이상</option>
                     </select>
                 </div>
-                <div class="result hide">
-                    <div class="result-mbti"></div>
-                    <a href="/result">다른 결과 보기</a>
+                <div class="result text-center hide">
+                    <p>당신은<b><span class="result-mbti"></span></b>입니다</p>
+                    <p><a href="/result">통계 보기</a></p>
                 </div>
             </div>
         </div>

@@ -68,10 +68,10 @@ distribute(ageType.teen, ".age-type-wrapper .teen", false, '10대 통계', teenT
 distribute(ageType.twenty, ".age-type-wrapper .twenty", false, '20대 통계', twentyTypeChartElem);
 distribute(ageType.thirty, ".age-type-wrapper .thirty", false, '30대 통계', thirtyTypeChartElem);
 distribute(ageType.fourty, ".age-type-wrapper .fourty", false, '40대 통계', FourtyTypeChartElem);
-distribute(ageEachType.teen, ".age-each-type-wrapper .teen", true, '10대 개별 통계', teenEachChartElem);
-distribute(ageEachType.twenty, ".age-each-type-wrapper .twenty", true, '20대 개별 통계', twentyEachChartElem);
-distribute(ageEachType.thirty, ".age-each-type-wrapper .thirty", true, '30대 개별 통계', thirtyEachChartElem);
-distribute(ageEachType.fourty, ".age-each-type-wrapper .fourty", true, '40대 개별 통계', fourtyEachChartElem);
+distribute(ageEachType.teen, ".age-each-type-wrapper .teen", true, '10대 음식별 통계', teenEachChartElem);
+distribute(ageEachType.twenty, ".age-each-type-wrapper .twenty", true, '20대 음식별 통계', twentyEachChartElem);
+distribute(ageEachType.thirty, ".age-each-type-wrapper .thirty", true, '30대 음식별 통계', thirtyEachChartElem);
+distribute(ageEachType.fourty, ".age-each-type-wrapper .fourty", true, '40대 음식별 통계', fourtyEachChartElem);
 
 
 
@@ -89,16 +89,36 @@ function createChart(elem, labels, data, label) {
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
                     'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
                 ],
                 borderColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
                     'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
                 ],
                 borderWidth: 1
             }]
@@ -113,4 +133,16 @@ function createChart(elem, labels, data, label) {
             }
         }
     });
+}
+
+const toggleButton = document.querySelector('.result-toggle');
+toggleButton.addEventListener("click", toggleRawData);
+
+function toggleRawData() {
+    const dataElem = document.querySelector('.raw-data');
+    if(dataElem.classList.contains('hide')) {
+        dataElem.classList.remove('hide');
+    } else {
+        dataElem.classList.add('hide');
+    }
 }

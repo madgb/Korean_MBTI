@@ -1,73 +1,223 @@
-body {
-    margin: 0;
+.title-font {
+    font-family: "Jua", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+.text-center {
+    text-align: center;
 }
 
-.inner {
-    height: inherit;
-    min-width: 350px;
-    max-width: 600px;
-    margin: 0 auto 0 auto;
+.font-weight-100 {
+    font-weight: 100;
 }
 
-.show {
-    display: block;
-    opacity: 1;
+.btn {
+    -webkit-appearance: none;
+    border: 0;
+    border-radius: 15px;
+    color: #fff;
 }
 
-.hide {
-    display: none;
-    opacity: 0;
+.btn-main {
+    padding: 20px 100px;
+    background: #ff6363;
+    font-size: 20px;
+}
+
+.intro-inner > .title {
+    padding: 40px;
+}
+
+.test-start {
+    padding: 60px 0;
+}
+
+.copyright {
+    font-size: 10px;
+    padding: 100px 0 0 0;
 }
 
 .question {
+    -webkit-transition: opacity 1s ease-out;
+    -o-transition: opacity 1s ease-out;
     transition: opacity 1s ease-out;
 }
 
-.pics {
+.flex-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    height: calc(100vh - 58px);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+}
+.pics {
+    height: calc(100vh - 170px);
 }
 
 .pic-box {
     width: 50%;
-    height: 25%;
     background-size: cover;
     background-position: center center;
+}
+
+.pics .pic-box {
+    height: 25%;
+}
+.test {
+    padding: 40px 0;
+}
+.test-pic-box {
+    height: 200px;
+}
+.question-title {
+    padding: 0 0 30px 0;
+    font-size: 40px;
+}
+.question-content {
+    font-family: "Nanum Myeongjo", serif;
+    padding: 40px 20px;
+    font-size: 20px;
+}
+
+.question-content p {
+    margin: 10px 0;
+}
+.answer-btn-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 50px 0 0 0;
+}
+.answer-btn {
+    background: #3d2850;
+    font-size: 20px;
+    padding: 20px 40px;
+    margin: 0 5px;
+}
+
+.age {
+    padding: 100px 0;
+}
+
+.age-title {
+    font-size: 27px;
+    margin: 0 0 20px 0;
+}
+
+.age-select {
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    font-size: 20px;
+}
+
+.result {
+    font-family: "Nanum Myeongjo", serif;
+    padding: 50px 0;
+    font-size: 20px;
+}
+
+.result p {
+    margin: 20px 0;
+}
+
+.result-mbti {
+    margin: 7px;
+    font-size: 25px;
 }
 
 .jjajang {
     background-image: url(../assets/jjajang1.jpg);
 }
 
+.jjajang2 {
+    background-image: url(../assets/jjajang2.jpg);
+}
+
+.jjajang3 {
+    background-image: url(../assets/jjajang3.jpg);
+}
+
 .jjambong {
     background-image: url(../assets/jjambbong1.jpeg);
+}
+
+.jjambong2 {
+    background-image: url(../assets/jjambbong2.jpg);
+}
+
+.jjambong3 {
+    background-image: url(../assets/jjambbong3.jpeg);
 }
 
 .boomuk {
     background-image: url(../assets/boo.jpg);
 }
 
+.boomuk2 {
+    background-image: url(../assets/boo2.jpg);
+}
+
+.boomuk3 {
+    background-image: url(../assets/boo3.jpeg);
+}
 .jjikmuk {
     background-image: url(../assets/jjickmuk1.jpg);
+}
+
+.jjikmuk2 {
+    background-image: url(../assets/jjickmuk2.jpg);
+}
+
+.jjikmuk3 {
+    background-image: url(../assets/jjickmuk3.jpg);
 }
 
 .mool {
     background-image: url(../assets/mool1.jpg);
 }
 
+.mool2 {
+    background-image: url(../assets/mool2.jpg);
+}
+
+.mool3 {
+    background-image: url(../assets/mool3.jpg);
+}
+
 .bibim {
     background-image: url(../assets/bibim1.jpg);
 }
 
+.bibim2 {
+    background-image: url(../assets/bibim2.jpg);
+}
+
+.bibim3 {
+    background-image: url(../assets/bibim3.png);
+}
+
 .mildd {
-    background-image: url(../assets/mildd1.jpg);
+    background-image: url(../assets/mildd1.jpeg);
+}
+
+.mildd2 {
+    background-image: url(../assets/mildd2.jpg);
+}
+
+.mildd3 {
+    background-image: url(../assets/mildd3.jpg);
 }
 
 .ssaldd {
     background-image: url(../assets/ssaldd1.jpg);
+}
+
+.ssaldd2 {
+    background-image: url(../assets/ssaldd2.jpg);
+}
+
+.ssaldd3 {
+    background-image: url(../assets/ssaldd3.jpg);
 }
