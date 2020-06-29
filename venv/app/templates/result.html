@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국식 MBTI | 통계</title>
+    <meta name="title" content="한국식 MBTI | 통계" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="inner">
+            <canvas id="allTypeChart" width="400" height="400"></canvas>
+            <canvas id="teenTypeChart" width="400" height="400"></canvas>
+            <canvas id="twentyTypeChart" width="400" height="400"></canvas>
+            <canvas id="thirtyTypeChart" width="400" height="400"></canvas>
+            <canvas id="FourtyTypeChart" width="400" height="400"></canvas>
+            <canvas id="teenEachChart" width="400" height="400"></canvas>
+            <canvas id="twentyEachChart" width="400" height="400"></canvas>
+            <canvas id="thirtyEachChart" width="400" height="400"></canvas>
+            <canvas id="fourtyEachChart" width="400" height="400"></canvas>
+            <div class="total-type-wrapper"></div>
+            <div class="age-type-wrapper">
+                <hr />
+                <div class="teen-title">10대</div>
+                <div class="teen"></div>
+                <hr />
+                <div class="twenty-title">20대</div>
+                <div class="twenty"></div>
+                <hr />
+                <div class="thirty-title">30대</div>
+                <div class="thirty"></div>
+                <hr />
+                <div class="fourty-title">40대 이상</div>
+                <div class="fourty"></div>
+            </div>
+            <div class="age-each-type-wrapper">
+                <hr />
+                <div class="teen-title">10대</div>
+                <div class="teen"></div>
+                <hr />
+                <div class="twenty-title">20대</div>
+                <div class="twenty"></div>
+                <hr />
+                <div class="thirty-title">30대</div>
+                <div class="thirty"></div>
+                <hr />
+                <div class="fourty-title">40대 이상</div>
+                <div class="fourty"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const data = JSON.parse('{{ data[0] | tojson | safe}}');
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/result.js') }}"></script>    
+</body>
+</html>

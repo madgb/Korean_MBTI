@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.inner {
+    height: inherit;
+    min-width: 350px;
+    max-width: 600px;
+    margin: 0 auto 0 auto;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+}
+
+.hide {
+    display: none;
+    opacity: 0;
+}
+
+.question {
+    transition: opacity 1s ease-out;
+}
+
+.pics {
+    display: flex;
+    flex-flow: row wrap;
+    height: calc(100vh - 58px);
+}
+
+.pic-box {
+    width: 50%;
+    height: 25%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.jjajang {
+    background-image: url(../assets/jjajang1.jpg);
+}
+
+.jjambong {
+    background-image: url(../assets/jjambbong1.jpeg);
+}
+
+.boomuk {
+    background-image: url(../assets/boo.jpg);
+}
+
+.jjikmuk {
+    background-image: url(../assets/jjickmuk1.jpg);
+}
+
+.mool {
+    background-image: url(../assets/mool1.jpg);
+}
+
+.bibim {
+    background-image: url(../assets/bibim1.jpg);
+}
+
+.mildd {
+    background-image: url(../assets/mildd1.jpg);
+}
+
+.ssaldd {
+    background-image: url(../assets/ssaldd1.jpg);
+}

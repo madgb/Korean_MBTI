@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en, KO">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>한국식 MBTI | 짜부물밀부터 짬찍비쌀까지</title>
+        <meta name="title" content="한국식 MBTI | 짜부물밀부터 짬찍비쌀까지" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="inner">
+                <div class="intro">
+                    <div class="intro-inner">
+                        <div class="title">
+                            <h1>
+                                한국식 MBTI(먹방타입)
+                            </h1>
+                            <h4>짜부물밀부터 짬찍비쌀까지</h4>
+                        </div>
+                        <div class="pics">
+                            <div class="pic-box jjajang"></div>
+                            <div class="pic-box jjambong"></div>
+                            <div class="pic-box boomuk"></div>
+                            <div class="pic-box jjikmuk"></div>
+                            <div class="pic-box mool"></div>
+                            <div class="pic-box bibim"></div>
+                            <div class="pic-box mildd"></div>
+                            <div class="pic-box ssaldd"></div>
+                        </div>
+                        <div class="test-start">
+                            <button class="test-start-button">테스트 시작</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="test hide">
+                    <div class="jjjb">
+                        <div class="q1 question">
+                            <div class="title">배달시</div>
+                            <button type="button" name="짜">짜장</button>
+                            <button type="button" name="짬">짬뽕</button>
+                        </div>
+                        <div class="q2 question hide">
+                            <div class="title">식당시</div>
+                            <button type="button" name="짜">짜장</button>
+                            <button type="button" name="짬">짬뽕</button>
+                        </div>
+                        <div class="q3 question hide">
+                            <div class="title">여러명</div>
+                            <button type="button" name="짜">짜장</button>
+                            <button type="button" name="짬">짬뽕</button>
+                        </div>
+                    </div>
+                    <div class="jmbm">
+                        <div class="q1 question hide">
+                            <div class="title">배달시</div>
+                            <button type="button" name="부">부먹</button>
+                            <button type="button" name="찍">찍먹</button>
+                        </div>
+                        <div class="q2 question hide">
+                            <div class="title">식당시</div>
+                            <button type="button" name="부">부먹</button>
+                            <button type="button" name="찍">찍먹</button>
+                        </div>
+                        <div class="q3 question hide">
+                            <div class="title">여러명</div>
+                            <button type="button" name="부">부먹</button>
+                            <button type="button" name="찍">찍먹</button>
+                        </div>
+                    </div>
+                    <div class="mnbn">
+                        <div class="q1 question hide">
+                            <div class="title">배달시</div>
+                            <button type="button" name="물">물냉</button>
+                            <button type="button" name="비">비냉</button>
+                        </div>
+                        <div class="q2 question hide">
+                            <div class="title">식당시</div>
+                            <button type="button" name="물">물냉</button>
+                            <button type="button" name="비">비냉</button>
+                        </div>
+                        <div class="q3 question hide">
+                            <div class="title">여러명</div>
+                            <button type="button" name="물">물냉</button>
+                            <button type="button" name="비">비냉</button>
+                        </div>
+                    </div>
+                    <div class="mdsd">
+                        <div class="q1 question hide">
+                            <div class="title">배달시</div>
+                            <button type="button" name="밀">밀떡</button>
+                            <button type="button" name="쌀">쌀떡</button>
+                        </div>
+                        <div class="q2 question hide">
+                            <div class="title">식당시</div>
+                            <button type="button" name="밀">밀떡</button>
+                            <button type="button" name="쌀">쌀떡</button>
+                        </div>
+                        <div class="q3 question hide">
+                            <div class="title">여러명</div>
+                            <button type="button" name="밀">밀떡</button>
+                            <button type="button" name="쌀">쌀떡</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="age hide">
+                    <select class="age-select">
+                        <option value="선택해주세요" selected>선택해주세요</option>
+                        <option value="teen">10대</option>
+                        <option value="twenty">20대</option>
+                        <option value="thirty">30대</option>
+                        <option value="fourty">40대 이상</option>
+                    </select>
+                </div>
+                <div class="result hide">
+                    <div class="result-mbti"></div>
+                    <a href="/result">다른 결과 보기</a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
+    </body>
+</html>
