@@ -11,7 +11,7 @@ DATABASE_PASSWORD = os.environ.get("DATABASE_PASSWORD")
 
 app = Flask(__name__)
 
-connection_url = 'mongodb+srv://admin:{}@cluster0-vp8rf.mongodb.net/kmbti?retryWrites=true&w=majority'.format(DATABASE_PASSWORD)
+connection_url = 'mongodb+srv://admin:Operatio!12@cluster0-vp8rf.mongodb.net/kmbti?retryWrites=true&w=majority'
 
 client = pymongo.MongoClient(connection_url)
 
