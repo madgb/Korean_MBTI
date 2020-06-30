@@ -1,1 +1,2 @@
-web: python venv/app/flask_app.py
+heroku ps:scale web=1
+web: python venv/app/app.py
