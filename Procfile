@@ -1,4 +1,4 @@
 heroku buildpacks:clear
 heroku buildpacks:add --index heroku/python
-web: gunicorn venv/app/app.wsgi
+web: python venv/app/app.py
 heroku ps:scale web=1
