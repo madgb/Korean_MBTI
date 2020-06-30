@@ -1,1 +1,1 @@
-worker: python venv/app/flask_app.py
+web: python venv/app/flask_app.py
