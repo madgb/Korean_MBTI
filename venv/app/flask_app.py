@@ -74,4 +74,4 @@ def getAll():
     data = jsonify(output)
     return data
 
-app.run()
+app.run(host='0.0.0.0')
