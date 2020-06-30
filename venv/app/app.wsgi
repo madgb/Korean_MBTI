@@ -6,6 +6,6 @@ import sys
 import logging
 
 logging.basicConfig(stream=sys.stderr)
-sys.path.insert(0,"/var/www/html/Korean_MBTI/")
+sys.path.insert(0,"/var/www/html/Korean_MBTI/venv/app/")
 
 from app import app as application
