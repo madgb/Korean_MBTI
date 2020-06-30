@@ -11,7 +11,7 @@ DATABASE_PASSWORD = os.environ.get("DATABASE_PASSWORD")
 
 app = Flask(__name__)
 
-connection_url = 'mongodb+srv://admin:Operatio!12@cluster0-vp8rf.mongodb.net/kmbti?retryWrites=true&w=majority'.format(DATABASE_PASSWORD)
+connection_url = 'mongodb+srv://admin:{}@cluster0-vp8rf.mongodb.net/kmbti?retryWrites=true&w=majority'.format(DATABASE_PASSWORD)
 
 client = pymongo.MongoClient(connection_url)
 
@@ -74,5 +74,5 @@ def getAll():
     data = jsonify(output)
     return data
 
-if __name__ == '__main__':
-      app.run(host='0.0.0.0', port=80)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
