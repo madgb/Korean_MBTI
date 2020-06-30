@@ -1,0 +1,12 @@
+.btn-wrapper {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 20px;
+}
+
+.result-toggle {
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    font-size: 17px;
+}
