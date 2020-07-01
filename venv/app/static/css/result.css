@@ -10,3 +10,27 @@
     border: none;
     font-size: 17px;
 }
+
+.rank-wrapper {
+    font-family: "Nanum Myeongjo", serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.rank-wrapper .letter-margin {
+    margin: 0 5px;
+}
+
+.rank-wrapper .box-margin {
+    margin: 1.2rem 0;
+}
+
+.rank-wrapper .top-ranker.title {
+    font-family: "Jua", sans-serif;
+    font-size: 40px;
+    margin: 1rem;
+}
+
+.rank-wrapper .date-time {
+    font-size: 13px;
+}

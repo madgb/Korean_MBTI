@@ -102,7 +102,6 @@ const sendData = function(finalResult, age) {
     });
 
     const data = {mbti, age};
-    console.log('kmbti result - ready to fetch', data);
 
     fetch('/my-result', {
         method: 'POST',
