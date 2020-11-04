@@ -56,7 +56,7 @@ function letterToKorean(
     simple = false
 ) {
     if (simple) {
-        return typeVariable.split("").map((letter) => translateForm[letter][0]).join("");
+        return typeVariable.split("").map((letter) => translateForm[letter] ? translateForm[letter][0] : "").join("");
     }
 
     let mappedType;
@@ -65,11 +65,11 @@ function letterToKorean(
         mappedType = typeVariable.map((type) =>
             type
                 .split("")
-                .map((letter) => translateForm[letter][0])
+                .map((letter) => translateForm[letter] ? translateForm[letter][0] : "")
                 .join("")
         );
     } else {
-        mappedType = typeVariable.map((type) => translateForm[type]);
+        mappedType = typeVariable.map((type) => translateForm[type] ? translateForm[type] : "");
     }
 
     let allResult = "";
